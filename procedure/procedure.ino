@@ -85,7 +85,7 @@ void loop() {
     Serial.print("\n");          
       // put your main code here, to run repeatedly:
       zStepDescend();
-      for (i = 0; i < 17000; i++){        //fully descend gantry using z steppers, wait time between deployment and agitation (delay). Change i < X for length.
+      for (i = 0; i < 5000; i++){        //fully descend gantry using z steppers, wait time between deployment and agitation (delay). Change i < X for length.
         z_motorStep();
         delayMicroseconds(2000);
       }
@@ -100,7 +100,7 @@ void loop() {
 
 
       zStepAscend();
-      for (i = 0; i < 17000; i++){      // speed of gantry ascending
+      for (i = 0; i < 5000; i++){      // speed of gantry ascending
         z_motorStep();
         delayMicroseconds(2000);
       }
