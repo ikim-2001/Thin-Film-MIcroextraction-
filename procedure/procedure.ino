@@ -87,7 +87,7 @@ void loop() {
       zStepDescend();
       for (i = 0; i < 17000; i++){        //fully descend gantry using z steppers, wait time between deployment and agitation (delay). Change i < X for length.
         z_motorStep();
-        delayMicroseconds(1000);
+        delayMicroseconds(2000);
       }
       delay(1000);
       agtCounterclockwise();      
@@ -102,7 +102,7 @@ void loop() {
       zStepAscend();
       for (i = 0; i < 17000; i++){      // speed of gantry ascending
         z_motorStep();
-        delayMicroseconds(1000);
+        delayMicroseconds(2000);
       }
    
       delay(5000);
